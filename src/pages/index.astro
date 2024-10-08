@@ -1,7 +1,9 @@
 ---
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
 import "../styles/global.css";
-console.log("Processing index.astro");
-const pageTitle = "Remote DevOps Consulting";
+
+const pageTitle = "Home Page";
 ---
 
 <html lang="en">
@@ -13,9 +15,8 @@ const pageTitle = "Remote DevOps Consulting";
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-		<a href="/">Home</a>
-		<a href="/about/">About</a>
-		<a href="/blog/">Blog</a>
+		<Navigation />
 		<h1>{pageTitle}</h1>
+		<Footer />
 	</body>
 </html>
