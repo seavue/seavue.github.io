@@ -3,8 +3,6 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import "../styles/global.css";
 
-export const prerender = false;
-
 const pageTitle = "About Me";
 
 const identity = {
@@ -61,9 +59,6 @@ const skillColor = "navy";
       {skills.map((skill) => <li class="skill">{skill}</li>)}
     </ul>
     <Footer />
-    <script>
-      import "../scripts/menu.js";
-    </script>
   </body>
 </html>
 
